@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "MinimumAllowedVersion": {
+      "title": "最低允許 Chrome 版本",
+      "description": "Chrome 目前版本必須大於或等於此四段式數字版本號，例如 140.0.7339.81；允許前導零，例如 0140.00.7339.0081。",
+      "type": "string"
+    },
+    "ExternalNetworkBlockDate": {
+      "title": "禁止外部網路日期",
+      "description": "過舊 Chrome 版本開始禁止連線外部網路的日期，格式固定為 YYYY-MM-DD。",
+      "type": "string"
+    },
+    "SopUrl": {
+      "title": "Chrome 更新 SOP 網址",
+      "description": "使用者查看公司 Chrome 更新 SOP 的 HTTP 或 HTTPS 網址。",
+      "type": "string"
+    },
+    "DownloadUrl": {
+      "title": "Chrome 下載網址",
+      "description": "使用者取得公司核准 Chrome 安裝程式的 HTTP 或 HTTPS 網址。",
+      "type": "string"
+    }
+  }
+}

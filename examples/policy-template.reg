@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Chrome security version reminder extension ID: bklghhpdljbemdboogebiacbbdknhdli
+; 999.0.0.0 is intentionally high so the alert is displayed during testing.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\3rdparty\extensions\bklghhpdljbemdboogebiacbbdknhdli\policy]
+"MinimumAllowedVersion"="999.0.0.0"
+"ExternalNetworkBlockDate"="2026-12-31"
+"SopUrl"="https://example.com/?page=chrome-update-sop"
+"DownloadUrl"="https://example.com/?page=chrome-download"

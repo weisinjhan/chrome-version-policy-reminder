@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Chrome Update Reminder"
+  },
+  "extensionDescription": {
+    "message": "Reminds users to update Google Chrome according to the company minimum version policy."
+  },
+  "actionTitle": {
+    "message": "Chrome update reminder"
+  }
+}

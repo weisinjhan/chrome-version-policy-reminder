@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "1.2.0",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmTmA1QwMhITupDFPEi9gBXWGOUA1Kx6NjOqVpUXRjhZVQWAdbtgJrkoFt53iGbY8oCyHjQLUNv4Gzb6M3R9VY66Ss/SMAUdsBiAz3IwTNzbRhvXyr1wFkT4c8DiphLL6R7hvW7vwZ+ox2eoiRHks/x/XeHD3ZITUTtuLnOOIZqPL3mWY38fxpOg6NbU4rB1KUGKnvpa1/RbdJfSgUNs3EiqbhC+w+edRTXMnsOuEXy7lXh2lsX9Vc/8gq3YNr8kSv7jN3o2fi2unifCcJoCLu4oODdnY1GveymzxRg1rCl3ZN7uFSHuq3+JumAabZpd8jTixls0PcIXxcpjfP0mTjQIDAQAB",
+  "permissions": [
+    "alarms",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "localization.js",
+        "content-reminder.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "storage": {
+    "managed_schema": "managed-schema.json"
+  }
+}

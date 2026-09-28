@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Chrome 版本更新提醒"
+  },
+  "extensionDescription": {
+    "message": "根据公司设置的最低允许版本，提醒用户更新 Google Chrome。"
+  },
+  "actionTitle": {
+    "message": "Chrome 版本更新提醒"
+  }
+}
